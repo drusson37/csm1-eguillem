@@ -44,8 +44,40 @@ On constate que plus le pas est petit, plus l'erreur l'est aussi.
 Ci-joint dans le mail, notre code pour afficher ces résultats.
 
 
-## Séance 2: Utilisation de GIT et fin du TP1 Partie 2
+## Séance 2: Utilisation de GIT et continuité du TP1 Partie 2
 
 ### Partie 2: Programmes de calcul en Python, utilisation de Numpy et Matplotlib
 
-1. J'ai rajouté au code l'affichage du graph de convergence, et en pièce jointe l'image de ce graph.
+1. J'ai rajouté au code l'affichage du graph de convergence, et en pièce jointe l'image de ce graph. *(grapherreurq1.png)*
+
+2. a/ Voici les erreurs commises par la méthode d'Euler explicite pour l'équation y'(t) = 1-y² avec y(0) = 0 pour t dans [0,1], en prenant des pas de temps h = 0.2 0.1 0.05 0.025 0.0125 0.00625:
+
+0.2 | 0.051542711647093474
+
+0.1 | 0.025230901150132257
+
+0.05 | 0.012443814368973037
+
+0.025 | 0.006178101429809816
+
+0.0125 | 0.0028708761597393104
+
+0.00625 | 0.0008973099322736569
+
+En pièce jointe le graph correspondant *(grapherreurq2.png)*
+
+b/ Voici les erreurs commises par la méthode d'Euler explicite pour l'équation y'(t) = 1-y² avec y(0) = 0 pour t dans [0,1], en prenant des pas de temps h = 0.2 0.1 0.05 0.025 0.0125 0.00625:
+
+0.2 | 1.2056454817778384
+
+0.1 | 1.9761765033790237
+
+0.05 | 2.4479182119578877
+
+0.025 | 2.712527275197839
+
+0.0125 | 2.853204867600841
+
+0.00625 | 2.925810657011926
+
+En pièce jointe le graph correspondant *(grapherreurq2b.png)*
