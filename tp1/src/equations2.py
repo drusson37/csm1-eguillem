@@ -20,6 +20,14 @@ def f_affine(t,y):
 
 def sol_affine(t,y0,t0):
  
-    c=np.log(abs((1+y0)/(1-y0)))-2*t0
-    return (np.exp(2*t+c) -1) / (np.exp(2*t+c)+1) 
+    if y0<1:             
+        c=np.log(np.abs((1+y0)/(1-y0)))-2*t0
+        return (np.exp(2*t+c) -1) / (np.exp(2*t+c)+1) 
+    if y0>1:            
+        c=np.log((1+y0)/np.abs((1-y0)))-2*t0
+        return (np.exp(2*t+c) -1) / (np.exp(2*t+c)+1) 
 
+    if y0<-1:            
+        c=np.log(np.abs((1+y0))/(1-y0))-2*t0
+        return (np.exp(2*t+c) -1) / (np.exp(2*t+c)+1) 
+    return 1
