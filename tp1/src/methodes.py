@@ -29,7 +29,6 @@ def euler_explicite(t0,h,N, y0,f):
 
 
 def RK(t0,h,N, y0,f):
-    """Méthode de Runge Kutta """
 
     t = np.linspace(t0,t0+N*h,N+1)
     y = np.zeros((N+1))
@@ -52,4 +51,17 @@ def pointmilieu(t0,h,N,y0,f):
       y[k+1] = y[k-1] + 2*h*f(t[k],y[k])
 
     return [t,y]
+
+def trapeze(t0,h,N,y0,f):
+
+  t = np.linspace(t0,t0+N*h,N+1) 
+  y = np.zeros((N+1))
+  y[0] = y0
+
+  for k in np.arange(N): 
+    yy = y[k] + h*f(t[k],y[k]) #prédiction
+    y[k+1] = y[k] + 0.5*h*(f(t[k],y[k])+f(t[k+1],yy)) #correction
+
+  return [t,y]
+
 
