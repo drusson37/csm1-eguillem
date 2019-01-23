@@ -27,3 +27,29 @@ def euler_explicite(t0,h,N, y0,f):
 
     return [t,y]
 
+
+def RK(t0,h,N, y0,f):
+    """Méthode de Runge Kutta """
+
+    t = np.linspace(t0,t0+N*h,N+1)
+    y = np.zeros((N+1))
+    y[0] = y0
+
+    for k in np.arange(N): 
+        y[k+1] = y[k] + h*f(t[k]+0.5*h,y[k]+0.5*h*f(t[k],y[k]))
+
+    return [t,y]
+
+def pointmilieu(t0,h,N,y0,f):
+
+    t = np.linspace(t0,t0+N*h,N+1) 
+    y = np.zeros((N+1))
+    y[0] = y0
+    y[1] = y[0] + h*f(t[0]+0.5*h,y[0]+0.5*h*f(t[0],y[0])) 
+
+    for k in np.arange(1,N): 
+
+      y[k+1] = y[k-1] + 2*h*f(t[k],y[k])
+
+    return [t,y]
+
