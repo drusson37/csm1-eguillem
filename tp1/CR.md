@@ -41,9 +41,9 @@ On constate que plus le pas est petit, plus l'erreur l'est aussi.
 
  J'ai rajouté au code l'affichage du **graph de convergence**:
  
- <img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/grapherreurq1.png">
  
- 
+ [![img](grapherreurq1.png )](grapherreurq1.png)
+
 C'est à dire, on trace à partir de ces résultats: la courbe de l'erreur relative en fonction de h, en échelle logarithmique.
 
 2. a/ Voici les erreurs commises par la méthode d'Euler explicite pour l'équation **y'(t) = 1-y² **avec **y(0) = 0 **pour t dans [0,1]:
@@ -60,9 +60,9 @@ C'est à dire, on trace à partir de ces résultats: la courbe de l'erreur relat
 Ainsi que le **graph de convergence** correspondant :
 
 
- <img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/grapherreurq2.png">
  
-
+ [![img](grapherreurq2.png)](grapherreurq2.png)
+ 
 b/ Voici les erreurs commises par la méthode d'Euler explicite pour l'équation **y'(t) = 1-y² **avec **y(0) = 2 ***pour t dans [0,1]:
 
 | Pas h   | Erreur relative associée |   |   |   |
@@ -76,10 +76,8 @@ b/ Voici les erreurs commises par la méthode d'Euler explicite pour l'équation
 
 Ainsi que le **graph de convergence** correspondant :
 
-
- <img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/grapherreurq2b.png">
  
-
+ [![img](grapherreurq2b.png)](grapherreurq2b.png)
 
 *Dans la suite on s'intéressera toujours à l'équation y'(t) = 1-y² que l'on traitera avec des méthodes différentes.*
 
@@ -103,8 +101,8 @@ Pour **y(0) = 0** :
 On compare les courbes du **graph de convergence** de RK2 et Euler Explicite:
 
 
- <img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/3a.png">
- 
+
+  [![img](3a.png)](3a.png)
 
 b/ Pour **y(0) = 2 **:
 
@@ -119,7 +117,7 @@ b/ Pour **y(0) = 2 **:
 
 On remarque que RK2 plus efficace qu'Euler Explicite, d'après la comparaison des courbes (de RK2 et Euler Explicite) du **graph de convergence** correspondant :
 
- <img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/3b.png">
+ [![img](3b.png)](3b.png)
 
 4. On utilise maintenant la méthode du point milieu : y_{n+1} = y_{n-1} + 2*h*f(t_n,y_n), y_1 calculé par la méthode RK2.
 
@@ -138,11 +136,11 @@ a/ Pour **y(0) = 0 **:
 
 Le **graph de convergence** correspondant :
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/4.png">
+ [![img](4.png)](4.png)
 
 Le graph de **comparaison des courbes de convergence des trois méthodes (RK2,Euler Explicite et Point milieu) **:
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/4compa.png">
+ [![img](4compa.png)](4compa.png)
 
 b/ Pour **y(0) = 2** :
 
@@ -157,11 +155,11 @@ b/ Pour **y(0) = 2** :
 
 Le **graph de convergence** correspondant :
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/4b.png">
+ [![img](4b.png)](4b.png)
 
 Le graph de **comparaison des courbes de convergence des trois méthodes (RK2,Euler Explicite et Point milieu) **:
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/4compab.png">
+ [![img](4compab.png)](4compab.png)
 
 En comparant Euler Explicite, RK2 et la méthode du point milieu, on voit que c'est RK2 qui est le plus efficace (c'est avec cette méthode que l'erreur est la plus faible).
 
@@ -183,8 +181,8 @@ Correction: y_{n+1} = y_n + 0.5*h*( f(t_n,y_n) + f(t_{n+1},y_*) )
 
 Le **graph de convergence** correspondant :
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/5.png">
-
+ [![img](5.png)](5.png)
+ 
 b/ Pour **y(0) = 2**:
 
 | Pas h   | Erreur relative associée |   |   |   |
@@ -198,5 +196,4 @@ b/ Pour **y(0) = 2**:
 
 Le **graph de convergence** correspondant :
 
-<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/5b.png">
-
+ [![img](5b.png)](5b.png)
