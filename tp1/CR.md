@@ -165,8 +165,38 @@ Le graph de **comparaison des courbes de convergence des trois méthodes (RK2,Eu
 
 En comparant Euler Explicite, RK2 et la méthode du point milieu, on voit que c'est RK2 qui est le plus efficace (c'est avec cette méthode que l'erreur est la plus faible).
 
+5. On s'intéresse maintenant à la méthode du trapèze: y_{n+1} = y_n + 0.5*h*( f(t_n,y_n) + f(t_{n+1},y_{n+1}).
+On utilise pour cela la méthode dite de prédiction/correction:
+Prédiction: y_* = y_n + h*f(t_n,y_n)
+Correction: y_{n+1} = y_n + 0.5*h*( f(t_n,y_n) + f(t_{n+1},y_*) ) 
 
+ a/ Pour **y(0) = 0**:
+ 
+| Pas h   | Erreur relative associée |   |   |   |
+|---------|--------------------------|---|---|---|
+| 0.2     | 0.005884470097676564     |   |   |   |
+| 0.1     | 0.0013287762811675652    |   |   |   |
+| 0.05    | 0.000315732166490279     |   |   |   |
+|  0.025  | 7.695770254201317e-05    |   |   |   |
+| 0.0125  | 1.8997570096490612e-05   |   |   |   |
+| 0.00625 |   4.7194734267286265e-06 |   |   |   |
 
+Le **graph de convergence** correspondant :
 
+<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/5.png">
 
+b/ Pour **y(0) = 2**:
+
+| Pas h   | Erreur relative associée |   |   |   |
+|---------|--------------------------|---|---|---|
+| 0.2     | 0.02853894158725856      |   |   |   |
+| 0.1     | 0.006356659480775573     |   |   |   |
+| 0.05    | 0.0014540286536903757    |   |   |   |
+|  0.025  | 0.0003455803659389023    |   |   |   |
+| 0.0125  | 8.42587831753061e-05     |   |   |   |
+| 0.00625 |   2.0794139891533447e-05 |   |   |   |
+
+Le **graph de convergence** correspondant :
+
+<img src = "/net/cremi/eguillem/Utilisation-de-Plateforme-Industrielle-pour-le-Calcul-Intensif/csm1-eguillem/tp1/5b.png">
 
